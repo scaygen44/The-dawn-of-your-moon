@@ -1,0 +1,161 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Materials/CSS/Reset.css" type="text/css">
+<link rel="stylesheet" href="Materials/CSS/Style.css" type="text/css">
+<script src="Materials/java/ism-2.2.min.js"></script>
+<title>The dawn of your moon | Фотограф СПБ</title>
+</head>
+<body>
+
+
+<div class="header">
+	<div class="parallax">
+		<div style="padding: 75px;object-fit: cover">
+			<a><img src="Materials/pics/logo.png" style="width:28%"></a>
+		</div>
+	</div>
+</div>
+
+<button onclick="topFunction()" id="myBtn">Вернуться</div></button>
+
+<div id="navbar">
+	<a href="main.html">ГЛАВНАЯ</a>
+		<a style="color:none;background-color:none"><hr color="#d3bc8e" width="18px" size="2px"></a>
+	<a href="javascript:void(0)">ПОРТФОЛИО</a>
+		<a style="color:none;background-color:none"><hr color="#d3bc8e" width="18px" size="2px"></a>
+	<a href="javascript:void(0)">ОБ АВТОРЕ</a>
+	<div style="float:right">
+	<a href="javascript:void(0)">ЦЕНЫ</a>
+		<a style="color:none;background-color:none"><hr color="#d3bc8e" width="18px" size="2px"></a>
+	<a href="javascript:void(0)">ИФНО</a>
+		<a style="color:none;background-color:none"><hr color="#d3bc8e" width="18px" size="2px"></a>
+	<a href="javascript:void(0)">КОНТАКТЫ</a>
+	</div>
+</div>
+
+<hr color="#d3bc8e" width="550px" size="2px">
+
+<div class="content">
+	<div style="font-size:36px; background-color:#1c1c22">
+		<div class="Textsett">
+			<div class="row">
+				<div class="column">
+				<div style="text-align: center;">
+					<img src="Materials/pics/1.jpg" style="width:22%">
+					<img src="Materials/pics/2.jpg" style="width:22%">
+					<img src="Materials/pics/4.jpg" style="width:22%">
+					<img src="Materials/pics/5.jpg" style="width:22%">
+					<br>
+					<img src="Materials/pics/6.jpg" style="width:22%">
+					<img src="Materials/pics/7.jpg" style="width:22%">
+					<img src="Materials/pics/8.jpg" style="width:22%">
+					<img src="Materials/pics/9.jpg" style="width:22%">
+					<br>
+					<img src="Materials/pics/10.jpg" style="width:22%">
+					<img src="Materials/pics/11.jpg" style="width:22%">
+					<img src="Materials/pics/12.jpg" style="width:22%">
+					<img src="Materials/pics/13.jpg" style="width:22%">
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 
+
+	<div class="mask">
+		<div class="loader"></div>
+	</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+let mask = document.querySelector('.mask');
+
+window.addEventListener('load', () => {
+	mask. classList.add('hide');
+	setTimeout(() => {
+	mask.remove();
+	}, 600);
+});
+</script>
+
+
+<hr color="#d3bc8e" width="350px" size="2px">
+	<br>
+	<br>
+	<br>
+<footer class="copyright">
+	<address>Обратная связь:</address>
+		<div style="font-size:15px;padding:10px;">
+			<p><a href="https://www.instagram.com/sand_trap_/" target="_blank" style="color:#d3bc8e; text-decoration:none">The dawn of your moon в инстаграм</a></p>
+			<p><a href="https://vk.com/public187426562" target="_blank" style="color:#d3bc8e; text-decoration:none">The dawn of your moon в ВК</a></p>
+		</div>
+		
+	<br>
+	<br>
+	<div style="font-size:10px;text-align:center;">
+		<p>© 2021. Coded by <a href="https://vk.com/scaygen44" target="_blank" style="color:#d3bc8e; text-decoration:none">Saidzhen</a></p>
+		<p><a href="sdr.html"><img style="text-align:center;cursor:pointer" src="Materials/pics/1.gif" width="15"; height="15"></a></p>
+	</div>
+</footer>
+
+</body>
+</html>
